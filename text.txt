@@ -1,0 +1,8 @@
+Asociatyvūs konteineriai
+
+Iki šiol dažniausiai naudojome nuoseklaus tipo konteinerius, t.y. jų elementų pirminė tvarka yra tokia, kokia mes tuos elementus sudėjome (naudodami pvz. insert ar push_back() metodus) į konteinerius. Tačiau tam tikroms užduotims kito tipo konteineriai yra labiau tinkami. Ši užduotis būtent skirta patyrinėti, kokio tipo užduotims asociatyvūs konteineriai yra labiau tinkami už nuosekliuosius (sekos) konteinerius.
+
+Suskaičiuokite, kiek kartų kiekvienas skirtingas žodis pasikartoja tekste (tekstą galite paimti iš betkur, pvz. delfi.lt naujiena ar Hario Poterio knyga) ir output'e (ekrane, ar išoriniame faile) atspausdinkite žodžius, kurie pasikartojo dažniau negu 1 kartą ir kiek kartų jie pasikartojo.
+Sukurkite cross-reference tipo lentelę kurioje būtų nurodyta, kurioje teksto vietoje (kuriose teksto eilutėse) buvo paminėtas kiekvienas daugiau negu vieną kartą pasikartojantis žodis.
+Realizuokite Unit Testus naudodami Jums labiausiai patinkantį C++ Unit testų framework'ą.
+Repozicija turi būti parengta pagal visus ankstesnių darbų galutinėms versijoms galiojančius reikalavimus.
