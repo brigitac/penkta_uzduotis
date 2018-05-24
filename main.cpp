@@ -4,6 +4,7 @@
 #include <sstream> 
 #include <map>
 #include <string>
+#include <iomanip> 
 int main()
 {
     auto eile=0;
@@ -17,8 +18,8 @@ int main()
         std:: string w;
         for (;eilute2>>w;)  
             {
-                if (w.back()=='.' || w.back()==',' || w.back()==')') w = w.substr(0, w.size()-1);
-                if (w.front()=='(') w = w.substr(1, w.size());
+                if (w.back()=='.' || w.back()==',' || w.back()==')' || w.back()=='"') w = w.substr(0, w.size()-1);
+                if (w.front()=='(' || w.front()=='"') w = w.substr(1, w.size());
                 ++word_map[w];
                 if (word_map[w]>1)
                     {
@@ -34,7 +35,7 @@ int main()
     {
       if (pair.second>1) 
         {
-         std::cout <<"'"<<pair.first<<"'"<< " žodis pasikartoja " << pair.second <<" kartus ir yra šiose eilutėse: "<<line_map[pair.first]<<std::endl;
+         std::cout<<"'"+pair.first+"'"<<" žodis pasikartoja " << pair.second <<" kartus ir yra šiose eilutėse: "<<line_map[pair.first]<<std::endl;
         } 
     }
 }
