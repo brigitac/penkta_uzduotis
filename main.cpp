@@ -20,7 +20,13 @@ int main()
                 if (w.back()=='.' || w.back()==',' || w.back()==')') w = w.substr(0, w.size()-1);
                 if (w.front()=='(') w = w.substr(1, w.size());
                 ++word_map[w];
-                if (word_map[w]>1)  line_map[w]=line_map[w] +", " +std::to_string(eile);
+                if (word_map[w]>1)
+                    {
+                        std::string eil=std::to_string(eile);    
+                        char eilutuke=eil.front();
+                        if (static_cast<char>(line_map[w].back())!=eilutuke)
+                        {line_map[w]=line_map[w] +", " +std::to_string(eile);}
+                    }
                 else line_map[w]=std::to_string(eile);
             }
     }
