@@ -22,14 +22,13 @@ int main()
                 ++word_map[w];
                 if (word_map[w]>1)  line_map[w]=line_map[w] +", " +std::to_string(eile);
                 else line_map[w]=std::to_string(eile);
-                std::cout<<word_map[w]<<" "<<line_map[w]<<std::endl;
             }
     }
-    for(auto it = word_map.cbegin(); it != word_map.cend(); ++it)
+    for(const auto &pair : word_map) 
     {
-     if (it->second>1) 
+      if (pair.second>1) 
         {
-         std::cout <<"'"<<it->first<<"'"<< " žodis pasikartoja " << it->second <<" kartus ir yra šiose eilutėse: "<<line_map[it->first]<<std::endl;
+         std::cout <<"'"<<pair.first<<"'"<< " žodis pasikartoja " << pair.second <<" kartus ir yra šiose eilutėse: "<<line_map[pair.first]<<std::endl;
         } 
     }
 }
