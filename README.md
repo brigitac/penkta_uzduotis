@@ -4,4 +4,4 @@
 2. Nusiklonuokite repoziciją ```git clone https://github.com/brigitac/penkta_uzduotis.git```
 3. 'Nueikite' į nusiklonuotą folderį įvesdami: ```cd penkta_uzduotis```
 4. Įveskite: ```make ```
-5. Ir```./a.out<text.txt```
+5. Ir```./a.out<text.txt```, kur ```text.txt```yra tekstinis failas, iš kurio bus išrinkti pasikartojantys žodžiai, taigi jį galite keisti bet kokiu kitu norimu tekstiniu failu.   
